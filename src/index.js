@@ -38,6 +38,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Counter from './Counter';
 import Todolist from './Todolist';
+import Countries from './Countries';
+import Countrydetails from './Countrydetails';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -54,6 +56,16 @@ const router = createBrowserRouter([
       {
         path: "/todolist",
         element:<Todolist></Todolist>,
+      },
+      {
+      path:'/countries',
+      element:<Countries></Countries>,
+      children:[
+        {
+          path:'/countries/countrydetails/:cname',
+          element:<Countrydetails></Countrydetails>
+        }
+      ]
       },
     ]
   },

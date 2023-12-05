@@ -6,6 +6,7 @@ function App() {
         <h1 className='mybox'>React Application developed by Supraja pamula</h1>
         <Link to="/counter">Counter</Link>&nbsp;&nbsp;
         <Link to="/todolist">Todolist</Link>&nbsp;&nbsp;
+        <Link to="/countries">Countries</Link>&nbsp;&nbsp;
         <Outlet></Outlet>
     </div>
   );

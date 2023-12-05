@@ -3,3 +3,43 @@
   margin:2px;
   padding:10px;
 }
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.liEl{
+  list-style-type: none;
+  border: 1px solid gray;
+  margin:5px;
+  text-align: center;
+  width:250px;
+}
+.liEl:hover{
+  box-shadow: 10px 10px 10px 6px;
+  box-sizing: unset;
+  cursor: pointer;
+}
+.divEl{
+  display: flex;
+  justify-items: flex-start;
+  background-color: rgb(167, 205, 239);
+}
+#listItems{
+  display: flex;
+  flex-direction: column;
+}
+.partOne{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+.partTwo{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  padding: 10px;
+}
